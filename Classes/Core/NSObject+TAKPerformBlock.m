@@ -12,31 +12,31 @@
 @implementation NSObject (TAKPerformBlock)
 
 - (void)perform:(dispatch_queue_t)queue block:(TAKVoidBlock)block {
-  dispatch_async(queue, block);
+  [TAKBlock run:queue block:block];
 }
 
 - (void)perform:(dispatch_queue_t)queue block:(TAKVoidBlock)block afterDelay:(NSTimeInterval)delay {
-  dispatch_after(dispatch_time(DISPATCH_TIME_NOW, delay * NSEC_PER_SEC), queue, block);
+  [TAKBlock run:queue block:block afterDelay:delay];
 }
 
 #pragma mark MainThread
 
 - (void)performBlockOnMainThread:(TAKVoidBlock)block {
-  [self perform:dispatch_get_main_queue() block:block];
+  [TAKBlock runOnMainThread:block];
 }
 
 - (void)performBlockOnMainThread:(TAKVoidBlock)block afterDelay:(NSTimeInterval)delay {
-  [self perform:dispatch_get_main_queue() block:block afterDelay:delay];
+  [TAKBlock runOnMainThread:block afterDelay:delay];
 }
 
 #pragma mark Background
 
 - (void)performBlockInBackground:(TAKVoidBlock)block {
-  [self perform:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0) block:block];
+  [TAKBlock runInBackground:block];
 }
 
 - (void)performBlockInBackground:(TAKVoidBlock)block afterDelay:(NSTimeInterval)delay {
-  [self perform:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0) block:block afterDelay:delay];
+  [TAKBlock runInBackground:block afterDelay:delay];
 }
 
 @end

@@ -8,14 +8,14 @@
 //
 
 #import "TAKAlert.h"
-#import "NSObject+TAKPerformBlock.h"
+#import "TAKBlock.h"
 #import "TAKWord.h"
 
 @implementation TAKAlert
 
 + (void)showOnMainThreadWithTitle:(NSString *)title message:(NSString *)message {
-  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:L(@"OK") otherButtonTitles:nil];  
-  [alert performBlockOnMainThread:^{
+  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:L(@"OK") otherButtonTitles:nil];
+  [TAKBlock runOnMainThread:^{
     [alert show];
   }];
 }

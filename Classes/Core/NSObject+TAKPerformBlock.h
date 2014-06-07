@@ -11,8 +11,7 @@
 #define TAKKit_Core_NSObject_TAKPerformBlock_h
 
 #import <Foundation/Foundation.h>
-
-typedef void (^TAKVoidBlock)(void);
+#import "TAKBlock.h"
 
 @interface NSObject (TAKPerformBlock)
 

@@ -23,5 +23,6 @@
 #import "TAKKit/Core/NSNotification+TAKExtensions.h"
 #import "TAKKit/Core/UIActionSheet+TAKExtensions.h"
 #import "TAKKit/Core/UIAlertView+TAKExtensions.h"
+#import "TAKKit/Core/TAKBlock.h"
 
 #endif
