@@ -8,7 +8,7 @@
 //
 
 #import "UITableView+TAKExtensions.h"
-#import "NSObject+TAKPerformBlock.h"
+#import "TAKBlock.h"
 
 @implementation UITableView (TAKExtensions)
 
@@ -17,15 +17,11 @@
 }
 
 - (void)reloadDataOnMainThread:(TAKVoidBlock)completion {
-  __weak typeof(self) weakSelf = self;
-  [self performBlockOnMainThread:^{
-    __strong typeof(weakSelf) strongSelf = weakSelf;
-    if (!strongSelf) return ;
-
-    [strongSelf reloadData];
+  [TAKBlock runOnMainThread:^{
+    [self reloadData];
     if (completion) {
       completion();
-	}
+    }
   }];
 }
 

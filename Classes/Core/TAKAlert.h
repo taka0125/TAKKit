@@ -14,7 +14,9 @@
 
 @interface TAKAlert : NSObject
 
-+ (void)showOnMainThreadWithTitle:(NSString *)title message:(NSString *)message;
++ (void)showOnMainThreadWithTitle:(NSString *)title message:(NSString *)message __attribute__ ((deprecated));
+
++ (void)showWithTitle:(NSString *)title message:(NSString *)message;
 
 @end
 

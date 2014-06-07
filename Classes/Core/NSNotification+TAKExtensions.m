@@ -9,15 +9,17 @@
 
 #import "NSNotification+TAKExtensions.h"
 
+static NSString * const Key = @"tak_parameters";
+
 @implementation NSNotification (TAKExtensions)
 
 + (id)notificationWithName:(NSString *)aName object:(id)anObject parameters:(id)parameters {
-  NSDictionary *userInfo = @{@"parameters": parameters};
+  NSDictionary *userInfo = @{Key: parameters};
   return [[self class] notificationWithName:aName object:anObject userInfo:userInfo];
 }
 
 - (id)parameters {
-  return self.userInfo[@"parameters"];
+  return self.userInfo[Key];
 }
 
 @end

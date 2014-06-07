@@ -8,14 +8,19 @@
 
 #import "TAKViewController.h"
 
-@interface TAKViewController ()
-
-@end
-
 @implementation TAKViewController
 
 - (void)viewDidLoad {
   NSLog(@"platform => %@", [UIDevice currentDevice].platform);
+  
+  [TAKBlock runInBackground:^{
+    NSLog(@"isMainThread = %d", [NSThread isMainThread]);
+    
+    [TAKAlert showWithTitle:@"Title" message:@"message"];
+    
+  } afterDelay:1.0f];
+  
+  self.view.backgroundColor = [UIColor tak_RGBColor:0xCCCCCC];  
 }
 
 - (IBAction)showAlert:(id)sender {
