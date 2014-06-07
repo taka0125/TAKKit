@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		86234D6A19439FF000CB269B /* TAKWordTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 86234D6919439FF000CB269B /* TAKWordTest.m */; };
+		86776CDC19439D150062FAB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86776CDB19439D150062FAB3 /* Foundation.framework */; };
+		86776CDE19439D150062FAB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86776CDD19439D150062FAB3 /* CoreGraphics.framework */; };
+		86776CE019439D150062FAB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86776CDF19439D150062FAB3 /* UIKit.framework */; };
+		86776CE619439D150062FAB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86776CE419439D150062FAB3 /* InfoPlist.strings */; };
+		86776CE819439D150062FAB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86776CE719439D150062FAB3 /* main.m */; };
+		86776CEC19439D150062FAB3 /* TAKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86776CEB19439D150062FAB3 /* TAKAppDelegate.m */; };
+		86776CEF19439D150062FAB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86776CED19439D150062FAB3 /* Main.storyboard */; };
+		86776CF219439D150062FAB3 /* TAKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86776CF119439D150062FAB3 /* TAKViewController.m */; };
+		86776CF419439D150062FAB3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86776CF319439D150062FAB3 /* Images.xcassets */; };
+		86776CFB19439D150062FAB3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86776CFA19439D150062FAB3 /* XCTest.framework */; };
+		86776CFC19439D150062FAB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86776CDB19439D150062FAB3 /* Foundation.framework */; };
+		86776CFD19439D150062FAB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86776CDF19439D150062FAB3 /* UIKit.framework */; };
+		86776D0519439D150062FAB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86776D0319439D150062FAB3 /* InfoPlist.strings */; };
+		86CD431B1944473C002F9845 /* NSNotificationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 86CD431A1944473C002F9845 /* NSNotificationTest.m */; };
+		9B0639CCEA35488D9DC315D2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0199CB9FDD534E769D89C154 /* libPods.a */; };
+		9E06D8883AA64F0E87E6627E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0199CB9FDD534E769D89C154 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		86776CFE19439D150062FAB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86776CD019439D150062FAB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86776CD719439D150062FAB3;
+			remoteInfo = TAKKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0199CB9FDD534E769D89C154 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		433E73DD0E0C41CD90F0E5FB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		86234D6919439FF000CB269B /* TAKWordTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAKWordTest.m; sourceTree = "<group>"; };
+		86776CD819439D150062FAB3 /* TAKKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TAKKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86776CDB19439D150062FAB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		86776CDD19439D150062FAB3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		86776CDF19439D150062FAB3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		86776CE319439D150062FAB3 /* TAKKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TAKKit-Info.plist"; sourceTree = "<group>"; };
+		86776CE519439D150062FAB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		86776CE719439D150062FAB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		86776CE919439D150062FAB3 /* TAKKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TAKKit-Prefix.pch"; sourceTree = "<group>"; };
+		86776CEA19439D150062FAB3 /* TAKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAKAppDelegate.h; sourceTree = "<group>"; };
+		86776CEB19439D150062FAB3 /* TAKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAKAppDelegate.m; sourceTree = "<group>"; };
+		86776CEE19439D150062FAB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		86776CF019439D150062FAB3 /* TAKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAKViewController.h; sourceTree = "<group>"; };
+		86776CF119439D150062FAB3 /* TAKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAKViewController.m; sourceTree = "<group>"; };
+		86776CF319439D150062FAB3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		86776CF919439D150062FAB3 /* TAKKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAKKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86776CFA19439D150062FAB3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		86776D0219439D150062FAB3 /* TAKKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TAKKitTests-Info.plist"; sourceTree = "<group>"; };
+		86776D0419439D150062FAB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		86CD431A1944473C002F9845 /* NSNotificationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSNotificationTest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86776CD519439D150062FAB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86776CDE19439D150062FAB3 /* CoreGraphics.framework in Frameworks */,
+				86776CE019439D150062FAB3 /* UIKit.framework in Frameworks */,
+				86776CDC19439D150062FAB3 /* Foundation.framework in Frameworks */,
+				9B0639CCEA35488D9DC315D2 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86776CF619439D150062FAB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86776CFB19439D150062FAB3 /* XCTest.framework in Frameworks */,
+				86776CFD19439D150062FAB3 /* UIKit.framework in Frameworks */,
+				86776CFC19439D150062FAB3 /* Foundation.framework in Frameworks */,
+				9E06D8883AA64F0E87E6627E /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		86776CCF19439D150062FAB3 = {
+			isa = PBXGroup;
+			children = (
+				86776CE119439D150062FAB3 /* TAKKit */,
+				86776D0019439D150062FAB3 /* TAKKitTests */,
+				86776CDA19439D150062FAB3 /* Frameworks */,
+				86776CD919439D150062FAB3 /* Products */,
+				433E73DD0E0C41CD90F0E5FB /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		86776CD919439D150062FAB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86776CD819439D150062FAB3 /* TAKKit.app */,
+				86776CF919439D150062FAB3 /* TAKKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86776CDA19439D150062FAB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86776CDB19439D150062FAB3 /* Foundation.framework */,
+				86776CDD19439D150062FAB3 /* CoreGraphics.framework */,
+				86776CDF19439D150062FAB3 /* UIKit.framework */,
+				86776CFA19439D150062FAB3 /* XCTest.framework */,
+				0199CB9FDD534E769D89C154 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86776CE119439D150062FAB3 /* TAKKit */ = {
+			isa = PBXGroup;
+			children = (
+				86776CEA19439D150062FAB3 /* TAKAppDelegate.h */,
+				86776CEB19439D150062FAB3 /* TAKAppDelegate.m */,
+				86776CED19439D150062FAB3 /* Main.storyboard */,
+				86776CF019439D150062FAB3 /* TAKViewController.h */,
+				86776CF119439D150062FAB3 /* TAKViewController.m */,
+				86776CF319439D150062FAB3 /* Images.xcassets */,
+				86776CE219439D150062FAB3 /* Supporting Files */,
+			);
+			path = TAKKit;
+			sourceTree = "<group>";
+		};
+		86776CE219439D150062FAB3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				86776CE319439D150062FAB3 /* TAKKit-Info.plist */,
+				86776CE419439D150062FAB3 /* InfoPlist.strings */,
+				86776CE719439D150062FAB3 /* main.m */,
+				86776CE919439D150062FAB3 /* TAKKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		86776D0019439D150062FAB3 /* TAKKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				86234D6919439FF000CB269B /* TAKWordTest.m */,
+				86CD431A1944473C002F9845 /* NSNotificationTest.m */,
+				86776D0119439D150062FAB3 /* Supporting Files */,
+			);
+			path = TAKKitTests;
+			sourceTree = "<group>";
+		};
+		86776D0119439D150062FAB3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				86776D0219439D150062FAB3 /* TAKKitTests-Info.plist */,
+				86776D0319439D150062FAB3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		86776CD719439D150062FAB3 /* TAKKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86776D0A19439D150062FAB3 /* Build configuration list for PBXNativeTarget "TAKKit" */;
+			buildPhases = (
+				ED2E68B182594A9683DD8F10 /* Check Pods Manifest.lock */,
+				86776CD419439D150062FAB3 /* Sources */,
+				86776CD519439D150062FAB3 /* Frameworks */,
+				86776CD619439D150062FAB3 /* Resources */,
+				10AC4A12A58647D4B1DE7229 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TAKKit;
+			productName = TAKKit;
+			productReference = 86776CD819439D150062FAB3 /* TAKKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		86776CF819439D150062FAB3 /* TAKKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86776D0D19439D150062FAB3 /* Build configuration list for PBXNativeTarget "TAKKitTests" */;
+			buildPhases = (
+				8812EDAE81164470A8376C49 /* Check Pods Manifest.lock */,
+				86776CF519439D150062FAB3 /* Sources */,
+				86776CF619439D150062FAB3 /* Frameworks */,
+				86776CF719439D150062FAB3 /* Resources */,
+				64E884FBCEF845A2ADF8BD4C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86776CFF19439D150062FAB3 /* PBXTargetDependency */,
+			);
+			name = TAKKitTests;
+			productName = TAKKitTests;
+			productReference = 86776CF919439D150062FAB3 /* TAKKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86776CD019439D150062FAB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TAK;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Takahiro Ooishi";
+				TargetAttributes = {
+					86776CF819439D150062FAB3 = {
+						TestTargetID = 86776CD719439D150062FAB3;
+					};
+				};
+			};
+			buildConfigurationList = 86776CD319439D150062FAB3 /* Build configuration list for PBXProject "TAKKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 86776CCF19439D150062FAB3;
+			productRefGroup = 86776CD919439D150062FAB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				86776CD719439D150062FAB3 /* TAKKit */,
+				86776CF819439D150062FAB3 /* TAKKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		86776CD619439D150062FAB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86776CF419439D150062FAB3 /* Images.xcassets in Resources */,
+				86776CE619439D150062FAB3 /* InfoPlist.strings in Resources */,
+				86776CEF19439D150062FAB3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86776CF719439D150062FAB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86776D0519439D150062FAB3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10AC4A12A58647D4B1DE7229 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64E884FBCEF845A2ADF8BD4C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8812EDAE81164470A8376C49 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ED2E68B182594A9683DD8F10 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		86776CD419439D150062FAB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86776CE819439D150062FAB3 /* main.m in Sources */,
+				86776CF219439D150062FAB3 /* TAKViewController.m in Sources */,
+				86776CEC19439D150062FAB3 /* TAKAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86776CF519439D150062FAB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86234D6A19439FF000CB269B /* TAKWordTest.m in Sources */,
+				86CD431B1944473C002F9845 /* NSNotificationTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		86776CFF19439D150062FAB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86776CD719439D150062FAB3 /* TAKKit */;
+			targetProxy = 86776CFE19439D150062FAB3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		86776CE419439D150062FAB3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86776CE519439D150062FAB3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		86776CED19439D150062FAB3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86776CEE19439D150062FAB3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		86776D0319439D150062FAB3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86776D0419439D150062FAB3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		86776D0819439D150062FAB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		86776D0919439D150062FAB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		86776D0B19439D150062FAB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 433E73DD0E0C41CD90F0E5FB /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TAKKit/TAKKit-Prefix.pch";
+				INFOPLIST_FILE = "TAKKit/TAKKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		86776D0C19439D150062FAB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 433E73DD0E0C41CD90F0E5FB /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TAKKit/TAKKit-Prefix.pch";
+				INFOPLIST_FILE = "TAKKit/TAKKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		86776D0E19439D150062FAB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 433E73DD0E0C41CD90F0E5FB /* Pods.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TAKKit.app/TAKKit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TAKKit/TAKKit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TAKKitTests/TAKKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		86776D0F19439D150062FAB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 433E73DD0E0C41CD90F0E5FB /* Pods.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TAKKit.app/TAKKit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TAKKit/TAKKit-Prefix.pch";
+				INFOPLIST_FILE = "TAKKitTests/TAKKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		86776CD319439D150062FAB3 /* Build configuration list for PBXProject "TAKKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86776D0819439D150062FAB3 /* Debug */,
+				86776D0919439D150062FAB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86776D0A19439D150062FAB3 /* Build configuration list for PBXNativeTarget "TAKKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86776D0B19439D150062FAB3 /* Debug */,
+				86776D0C19439D150062FAB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86776D0D19439D150062FAB3 /* Build configuration list for PBXNativeTarget "TAKKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86776D0E19439D150062FAB3 /* Debug */,
+				86776D0F19439D150062FAB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 86776CD019439D150062FAB3 /* Project object */;
+}

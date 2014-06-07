@@ -1,0 +1,14 @@
+language: objective-c
+env:
+  - XCODE_SDK=iphonesimulator7.0
+  - XCODE_SDK=iphonesimulator7.1
+
+xcode_workspace:  TAKKit.xcworkspace
+xcode_scheme: TAKKit
+xcode_sdk: iphonesimulator
+
+before_install:
+  - export LANG=en_US.UTF-8
+  - gem install cocoapods -v '0.33.1'
+  - brew update
+  - brew upgrade xctool
