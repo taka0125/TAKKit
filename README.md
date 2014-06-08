@@ -1,3 +1,7 @@
+# TAKKit [![Build Status](https://travis-ci.org/taka0125/TAKKit.svg)](https://travis-ci.org/taka0125/TAKKit)
+
+Utility classes and extensions.
+
 # Podfile
 
 ```ruby
