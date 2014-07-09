@@ -11,7 +11,7 @@
 
 @implementation UIStoryboard (TAKExtensions)
 
-- (id)instantiateViewControllerWithClass:(id)klass {
+- (id)tak_instantiateViewControllerWithClass:(id)klass {
   return [self instantiateViewControllerWithIdentifier:NSStringFromClass(klass)];
 }
 

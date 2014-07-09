@@ -13,7 +13,7 @@
 
 @implementation UIDevice (TAKHardware)
 
-- (NSString *)platform {
+- (NSString *)tak_platform {
   size_t size;
   sysctlbyname("hw.machine", NULL, &size, NULL, 0);
   char *machine = malloc(size);

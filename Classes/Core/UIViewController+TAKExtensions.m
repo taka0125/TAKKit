@@ -11,18 +11,12 @@
 
 @implementation UIViewController (TAKExtensions)
 
-- (id)initWithDefault {
-  NSString *nibName = [[self class] defaultNibName];
-  self = [self initWithNibName:nibName bundle:nil];
-  if (!self) return nil;
-  return self;
++ (id)tak_defaultController {
+  NSString *nibName = [[self class] tak_defaultNibName];
+  return [[[self class] alloc] initWithNibName:nibName bundle:nil];
 }
 
-+ (id)defaultController {
-  return [[[self class] alloc] initWithDefault];
-}
-
-+ (NSString *)defaultNibName {
++ (NSString *)tak_defaultNibName {
   return NSStringFromClass([self class]);
 }
 

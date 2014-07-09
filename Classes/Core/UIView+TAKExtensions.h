@@ -14,10 +14,11 @@
 
 @interface UIView (TAKExtensions)
 
-+ (UINib *)defaultNib;
-+ (instancetype)viewFromDefaultNib;
-+ (NSString *)defaultIdentifier;
-+ (NSString *)defaultNibName;
++ (UINib *)tak_defaultNib;
++ (instancetype)tak_viewFromDefaultNib;
++ (instancetype)tak_viewFromDefaultNibWithOwner:(id)owner;
++ (NSString *)tak_defaultIdentifier;
++ (NSString *)tak_defaultNibName;
 
 @end
 

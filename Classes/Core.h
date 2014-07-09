@@ -11,7 +11,6 @@
 #define TAKKit_Core_h
 
 #import "TAKKit/Core/defines.h"
-#import "TAKKit/Core/NSObject+TAKPerformBlock.h"
 #import "TAKKit/Core/TAKAlert.h"
 #import "TAKKit/Core/TAKWord.h"
 #import "TAKKit/Core/UICollectionView+TAKExtensions.h"
@@ -21,8 +20,6 @@
 #import "TAKKit/Core/UIViewController+TAKExtensions.h"
 #import "TAKKit/Core/UIStoryboard+TAKExtensions.h"
 #import "TAKKit/Core/NSNotification+TAKExtensions.h"
-#import "TAKKit/Core/UIActionSheet+TAKExtensions.h"
-#import "TAKKit/Core/UIAlertView+TAKExtensions.h"
 #import "TAKKit/Core/TAKBlock.h"
 #import "TAKKit/Core/UIColor+TAKExtensions.h"
 

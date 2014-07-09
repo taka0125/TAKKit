@@ -9,12 +9,11 @@
 
 #import "TAKAlert.h"
 #import "TAKBlock.h"
-#import "TAKWord.h"
 
 @implementation TAKAlert
 
 + (void)showWithTitle:(NSString *)title message:(NSString *)message {
-  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:L(@"OK") otherButtonTitles:nil];
+  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:NSLocalizedString(@"OK", @"") otherButtonTitles:nil];
   
   TAKVoidBlock block = ^{
     [alert show];
@@ -25,10 +24,6 @@
   } else {
     [TAKBlock runOnMainThread:block];
   }
-}
-
-+ (void)showOnMainThreadWithTitle:(NSString *)title message:(NSString *)message {
-  [self showWithTitle:title message:message];
 }
 
 @end

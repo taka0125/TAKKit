@@ -12,11 +12,11 @@
 
 @implementation UITableView (TAKExtensions)
 
-- (void)reloadDataOnMainThread {
-  [self reloadDataOnMainThread:nil];
+- (void)tak_reloadDataOnMainThread {
+  [self tak_reloadDataOnMainThread:nil];
 }
 
-- (void)reloadDataOnMainThread:(TAKVoidBlock)completion {
+- (void)tak_reloadDataOnMainThread:(TAKVoidBlock)completion {
   [TAKBlock runOnMainThread:^{
     [self reloadData];
     if (completion) {

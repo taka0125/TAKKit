@@ -14,7 +14,7 @@
 
 @interface UIDevice (TAKHardware)
 
-- (NSString *)platform;
+- (NSString *)tak_platform;
 
 @end
 

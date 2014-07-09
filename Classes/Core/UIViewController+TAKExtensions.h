@@ -14,11 +14,9 @@
 
 @interface UIViewController (TAKExtensions)
 
-- (id)initWithDefault;
++ (id)tak_defaultController;
 
-+ (id)defaultController;
-
-+ (NSString *)defaultNibName;
++ (NSString *)tak_defaultNibName;
 
 @end
 

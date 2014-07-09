@@ -22,6 +22,4 @@
 
 @end
 
-#define L(__STR) [[TAKWord sharedInstance] localizedString:__STR]
-
 #endif

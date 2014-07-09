@@ -14,7 +14,7 @@
 
 @interface UIStoryboard (TAKExtensions)
 
-- (id)instantiateViewControllerWithClass:(id)klass;
+- (id)tak_instantiateViewControllerWithClass:(id)klass;
 
 @end
 

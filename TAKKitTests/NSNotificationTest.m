@@ -17,8 +17,8 @@
 
 - (void)testParameters {
   NSDictionary *parameters = @{@"key1": @"value1", @"key2": @(2)};
-  NSNotification *n = [NSNotification notificationWithName:@"Test" object:nil parameters:parameters];
-  XCTAssertEqualObjects([n parameters], parameters, @"");
+  NSNotification *n = [NSNotification tak_notificationWithName:@"Test" object:nil parameters:parameters];
+  XCTAssertEqualObjects([n tak_parameters], parameters, @"");
 }
 
 @end

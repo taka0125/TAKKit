@@ -11,22 +11,26 @@
 
 @implementation UIView (TAKExtensions)
 
-+ (UINib *)defaultNib {
-  return [UINib nibWithNibName:[[self class] defaultNibName] bundle:nil];
++ (UINib *)tak_defaultNib {
+  return [UINib nibWithNibName:[[self class] tak_defaultNibName] bundle:nil];
 }
 
-+ (instancetype)viewFromDefaultNib {
-  UINib *nib = [[self class] defaultNib];
-  NSArray *array = [nib instantiateWithOwner:nil options:nil];
++ (instancetype)tak_viewFromDefaultNib {
+  return [[self class] tak_viewFromDefaultNibWithOwner:nil];
+}
+
++ (instancetype)tak_viewFromDefaultNibWithOwner:(id)owner {
+  UINib *nib = [[self class] tak_defaultNib];
+  NSArray *array = [nib instantiateWithOwner:owner options:nil];
   return array[0];
 }
 
-+ (NSString *)defaultIdentifier {
++ (NSString *)tak_defaultIdentifier {
   return NSStringFromClass([self class]);
 }
 
-+ (NSString *)defaultNibName {
-  return [[self class] defaultIdentifier];
++ (NSString *)tak_defaultNibName {
+  return [[self class] tak_defaultIdentifier];
 }
 
 @end

@@ -11,7 +11,7 @@
 @implementation TAKViewController
 
 - (void)viewDidLoad {
-  NSLog(@"platform => %@", [UIDevice currentDevice].platform);
+  NSLog(@"platform => %@", [UIDevice currentDevice].tak_platform);
   
   [TAKBlock runInBackground:^{
     NSLog(@"isMainThread = %d", [NSThread isMainThread]);
@@ -21,11 +21,6 @@
   } afterDelay:1.0f];
   
   self.view.backgroundColor = [UIColor tak_RGBColor:0xCCCCCC];  
-}
-
-- (IBAction)showAlert:(id)sender {
-  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Test" message:@"Test" callback:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
-  [alert show];
 }
 
 @end

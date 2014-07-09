@@ -12,9 +12,9 @@
 
 @interface NSNotification (TAKExtensions)
 
-+ (id)notificationWithName:(NSString *)aName object:(id)anObject parameters:(id)parameters;
++ (id)tak_notificationWithName:(NSString *)aName object:(id)anObject parameters:(id)parameters;
 
-- (id)parameters;
+- (id)tak_parameters;
 
 @end
 

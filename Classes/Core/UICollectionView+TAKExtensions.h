@@ -11,12 +11,12 @@
 #define TAKKit_Core_UICollectionView_TAKExtensions_h
 
 #import <Foundation/Foundation.h>
-#import "NSObject+TAKPerformBlock.h"
+#import "TAKBlock.h"
 
 @interface UICollectionView (TAKExtensions)
 
-- (void)reloadDataOnMainThread;
-- (void)reloadDataOnMainThread:(TAKVoidBlock)completion;
+- (void)tak_reloadDataOnMainThread;
+- (void)tak_reloadDataOnMainThread:(TAKVoidBlock)completion;
 
 @end
 
