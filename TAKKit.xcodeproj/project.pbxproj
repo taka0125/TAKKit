@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		86234D6A19439FF000CB269B /* TAKWordTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 86234D6919439FF000CB269B /* TAKWordTest.m */; };
+		863B9B8019DFB5DA00D1B27C /* TAKBlockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 863B9B7F19DFB5DA00D1B27C /* TAKBlockTest.m */; };
 		86776CDC19439D150062FAB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86776CDB19439D150062FAB3 /* Foundation.framework */; };
 		86776CDE19439D150062FAB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86776CDD19439D150062FAB3 /* CoreGraphics.framework */; };
 		86776CE019439D150062FAB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86776CDF19439D150062FAB3 /* UIKit.framework */; };
@@ -21,6 +21,7 @@
 		86776CFC19439D150062FAB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86776CDB19439D150062FAB3 /* Foundation.framework */; };
 		86776CFD19439D150062FAB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86776CDF19439D150062FAB3 /* UIKit.framework */; };
 		86776D0519439D150062FAB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86776D0319439D150062FAB3 /* InfoPlist.strings */; };
+		86A4720E19DED49800C07497 /* TAKWordTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A4720D19DED49800C07497 /* TAKWordTest.m */; };
 		86CD431B1944473C002F9845 /* NSNotificationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 86CD431A1944473C002F9845 /* NSNotificationTest.m */; };
 		9B0639CCEA35488D9DC315D2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0199CB9FDD534E769D89C154 /* libPods.a */; };
 		9E06D8883AA64F0E87E6627E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0199CB9FDD534E769D89C154 /* libPods.a */; };
@@ -38,8 +39,7 @@
 
 /* Begin PBXFileReference section */
 		0199CB9FDD534E769D89C154 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		433E73DD0E0C41CD90F0E5FB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		86234D6919439FF000CB269B /* TAKWordTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAKWordTest.m; sourceTree = "<group>"; };
+		863B9B7F19DFB5DA00D1B27C /* TAKBlockTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAKBlockTest.m; sourceTree = "<group>"; };
 		86776CD819439D150062FAB3 /* TAKKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TAKKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86776CDB19439D150062FAB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		86776CDD19439D150062FAB3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,7 +58,10 @@
 		86776CFA19439D150062FAB3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		86776D0219439D150062FAB3 /* TAKKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TAKKitTests-Info.plist"; sourceTree = "<group>"; };
 		86776D0419439D150062FAB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		86A4720D19DED49800C07497 /* TAKWordTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAKWordTest.m; sourceTree = "<group>"; };
 		86CD431A1944473C002F9845 /* NSNotificationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSNotificationTest.m; sourceTree = "<group>"; };
+		C0F40E1076430EB7ECCE5A38 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FCE428A0CDAFAD7D06334CE4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +97,7 @@
 				86776D0019439D150062FAB3 /* TAKKitTests */,
 				86776CDA19439D150062FAB3 /* Frameworks */,
 				86776CD919439D150062FAB3 /* Products */,
-				433E73DD0E0C41CD90F0E5FB /* Pods.xcconfig */,
+				F12700B0EC2B894A81A57FEA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,7 +150,8 @@
 		86776D0019439D150062FAB3 /* TAKKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				86234D6919439FF000CB269B /* TAKWordTest.m */,
+				86A4720D19DED49800C07497 /* TAKWordTest.m */,
+				863B9B7F19DFB5DA00D1B27C /* TAKBlockTest.m */,
 				86CD431A1944473C002F9845 /* NSNotificationTest.m */,
 				86776D0119439D150062FAB3 /* Supporting Files */,
 			);
@@ -161,6 +165,15 @@
 				86776D0319439D150062FAB3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F12700B0EC2B894A81A57FEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCE428A0CDAFAD7D06334CE4 /* Pods.debug.xcconfig */,
+				C0F40E1076430EB7ECCE5A38 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +286,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		64E884FBCEF845A2ADF8BD4C /* Copy Pods Resources */ = {
@@ -288,7 +301,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8812EDAE81164470A8376C49 /* Check Pods Manifest.lock */ = {
@@ -338,7 +351,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86234D6A19439FF000CB269B /* TAKWordTest.m in Sources */,
+				863B9B8019DFB5DA00D1B27C /* TAKBlockTest.m in Sources */,
+				86A4720E19DED49800C07497 /* TAKWordTest.m in Sources */,
 				86CD431B1944473C002F9845 /* NSNotificationTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,7 +467,7 @@
 		};
 		86776D0B19439D150062FAB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 433E73DD0E0C41CD90F0E5FB /* Pods.xcconfig */;
+			baseConfigurationReference = FCE428A0CDAFAD7D06334CE4 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -467,7 +481,7 @@
 		};
 		86776D0C19439D150062FAB3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 433E73DD0E0C41CD90F0E5FB /* Pods.xcconfig */;
+			baseConfigurationReference = C0F40E1076430EB7ECCE5A38 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -481,7 +495,7 @@
 		};
 		86776D0E19439D150062FAB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 433E73DD0E0C41CD90F0E5FB /* Pods.xcconfig */;
+			baseConfigurationReference = FCE428A0CDAFAD7D06334CE4 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TAKKit.app/TAKKit";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -504,7 +518,7 @@
 		};
 		86776D0F19439D150062FAB3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 433E73DD0E0C41CD90F0E5FB /* Pods.xcconfig */;
+			baseConfigurationReference = C0F40E1076430EB7ECCE5A38 /* Pods.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TAKKit.app/TAKKit";
 				FRAMEWORK_SEARCH_PATHS = (

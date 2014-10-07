@@ -1,8 +1,8 @@
 PODS:
-  - TAKKit (1.0.1):
+  - TAKKit (1.1.0):
     - TAKKit/Core
     - TAKKit/Core
-  - TAKKit/Core (1.0.1):
+  - TAKKit/Core (1.1.0):
     - TAKKit/Core
 
 DEPENDENCIES:
@@ -13,6 +13,6 @@ EXTERNAL SOURCES:
     :path: ./
 
 SPEC CHECKSUMS:
-  TAKKit: 494350f58e4f6d712582897db83f8b7b750b8058
+  TAKKit: 080a950e8d936ff5e7aaa2e2f52b60c0ff414a5c
 
-COCOAPODS: 0.33.1
+COCOAPODS: 0.34.1

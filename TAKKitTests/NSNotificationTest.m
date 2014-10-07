@@ -21,4 +21,10 @@
   XCTAssertEqualObjects([n tak_parameters], parameters, @"");
 }
 
+- (void)testParametersWithNil {
+  NSDictionary *parameters = nil;
+  NSNotification *n = [NSNotification tak_notificationWithName:@"Test" object:nil parameters:parameters];
+  XCTAssertNil([n tak_parameters]);
+}
+
 @end
