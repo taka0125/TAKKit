@@ -21,5 +21,8 @@ class TAKSwiftViewController: UIViewController {
     }, afterDelay: 1.0)
     
     view.backgroundColor = UIColor.tak_RGBColor(0xCCCCCC)
+    
+    NSLog("name = \(NSStringFromClass(CustomView.self)), identifier = \(CustomView.tak_defaultIdentifier())")
+    NSLog("name = \(NSStringFromClass(UIView.self)), identifier = \(UIView.tak_defaultIdentifier())")
   }
 }
