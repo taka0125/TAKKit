@@ -7,23 +7,21 @@
 //
 
 #import "TAKViewController.h"
-
-@interface TAKViewController ()
-
-@end
+#import <TAKKit/TAKKit.h>
 
 @implementation TAKViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidLoad {
+  NSLog(@"platform => %@", [UIDevice currentDevice].tak_platform);
+  
+  [TAKBlock runInBackground:^{
+    NSLog(@"isMainThread = %d", [NSThread isMainThread]);
+    
+    [TAKAlert showWithTitle:@"Title" message:@"message"];
+    
+  } afterDelay:1.0f];
+  
+  self.view.backgroundColor = [UIColor tak_RGBColor:0xCCCCCC];
 }
 
 @end
