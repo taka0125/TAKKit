@@ -21,6 +21,7 @@ out/
 .idea/
 
 # CocoaPods
+Podfile.lock
 Pods/
 *.xcworkspace/
 

@@ -11,7 +11,7 @@
 
 @implementation UIViewController (TAKExtensions)
 
-+ (id)tak_defaultController {
++ (instancetype)tak_defaultController {
   NSString *nibName = [[self class] tak_defaultNibName];
   return [[[self class] alloc] initWithNibName:nibName bundle:nil];
 }

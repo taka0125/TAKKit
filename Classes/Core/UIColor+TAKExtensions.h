@@ -10,6 +10,8 @@
 #ifndef TAKKit_Core_UIColor_TAKExtensions_h
 #define TAKKit_Core_UIColor_TAKExtensions_h
 
+#import <UIKit/UIKit.h>
+
 @interface UIColor (TAKExtensions)
 
 + (UIColor *)tak_RGBColor:(int)code;

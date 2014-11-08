@@ -10,9 +10,11 @@
 #ifndef TAKKit_Core_NSNotification_TAKExtensions_h
 #define TAKKit_Core_NSNotification_TAKExtensions_h
 
+#import <Foundation/Foundation.h>
+
 @interface NSNotification (TAKExtensions)
 
-+ (id)tak_notificationWithName:(NSString *)aName object:(id)anObject parameters:(id)parameters;
++ (instancetype)tak_notificationWithName:(NSString *)aName object:(id)anObject parameters:(id)parameters;
 
 - (id)tak_parameters;
 
