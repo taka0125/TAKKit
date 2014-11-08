@@ -1,6 +1,14 @@
-# TAKKit [![Build Status](https://travis-ci.org/taka0125/TAKKit.svg)](https://travis-ci.org/taka0125/TAKKit)
+# TAKKit 
 
 Utility classes and extensions.
+
+## Build Status
+
+### master
+[![Build Status](https://travis-ci.org/taka0125/TAKKit.svg?branch=master)](https://travis-ci.org/taka0125/TAKKit)
+
+### develop
+[![Build Status](https://travis-ci.org/taka0125/TAKKit.svg?branch=develop)](https://travis-ci.org/taka0125/TAKKit)
 
 # Podfile
 
