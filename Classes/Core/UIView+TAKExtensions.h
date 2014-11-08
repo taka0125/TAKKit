@@ -10,7 +10,7 @@
 #ifndef TAKKit_Core_UIView_TAKExtensions_h
 #define TAKKit_Core_UIView_TAKExtensions_h
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface UIView (TAKExtensions)
 

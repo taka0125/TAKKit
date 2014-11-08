@@ -11,6 +11,7 @@
 #define TAKKit_Core_UIDevice_TAKHardware_h
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface UIDevice (TAKHardware)
 
