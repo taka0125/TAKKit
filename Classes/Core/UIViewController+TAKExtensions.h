@@ -14,7 +14,7 @@
 
 @interface UIViewController (TAKExtensions)
 
-+ (id)tak_defaultController;
++ (instancetype)tak_defaultController;
 
 + (NSString *)tak_defaultNibName;
 
