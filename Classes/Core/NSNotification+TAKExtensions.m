@@ -13,7 +13,7 @@ static NSString * const Key = @"tak_parameters";
 
 @implementation NSNotification (TAKExtensions)
 
-+ (id)tak_notificationWithName:(NSString *)aName object:(id)anObject parameters:(id)parameters {
++ (instancetype)tak_notificationWithName:(NSString *)aName object:(id)anObject parameters:(id)parameters {
   NSDictionary *userInfo = nil;
   if (parameters) {
     userInfo = @{Key: parameters};

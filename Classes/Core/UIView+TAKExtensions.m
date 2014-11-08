@@ -26,7 +26,8 @@
 }
 
 + (NSString *)tak_defaultIdentifier {
-  return NSStringFromClass([self class]);
+  NSString *name = NSStringFromClass([self class]);
+  return [[name componentsSeparatedByString:@"."] lastObject];
 }
 
 + (NSString *)tak_defaultNibName {

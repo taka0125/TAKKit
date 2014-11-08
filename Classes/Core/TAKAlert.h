@@ -10,7 +10,7 @@
 #ifndef TAKKit_Core_TAKAlert_h
 #define TAKKit_Core_TAKAlert_h
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface TAKAlert : NSObject
 
