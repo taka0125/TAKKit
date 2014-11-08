@@ -23,6 +23,7 @@
 		86776D0519439D150062FAB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86776D0319439D150062FAB3 /* InfoPlist.strings */; };
 		86A4720E19DED49800C07497 /* TAKWordTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A4720D19DED49800C07497 /* TAKWordTest.m */; };
 		86CD431B1944473C002F9845 /* NSNotificationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 86CD431A1944473C002F9845 /* NSNotificationTest.m */; };
+		86FDCB4B1A0DDBCC00C7FEB0 /* TAKSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FDCB4A1A0DDBCC00C7FEB0 /* TAKSwiftViewController.swift */; };
 		9B0639CCEA35488D9DC315D2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0199CB9FDD534E769D89C154 /* libPods.a */; };
 		9E06D8883AA64F0E87E6627E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0199CB9FDD534E769D89C154 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -60,6 +61,8 @@
 		86776D0419439D150062FAB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		86A4720D19DED49800C07497 /* TAKWordTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAKWordTest.m; sourceTree = "<group>"; };
 		86CD431A1944473C002F9845 /* NSNotificationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSNotificationTest.m; sourceTree = "<group>"; };
+		86FDCB491A0DDBCB00C7FEB0 /* TAKKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TAKKit-Bridging-Header.h"; sourceTree = "<group>"; };
+		86FDCB4A1A0DDBCC00C7FEB0 /* TAKSwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAKSwiftViewController.swift; sourceTree = "<group>"; };
 		C0F40E1076430EB7ECCE5A38 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FCE428A0CDAFAD7D06334CE4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,9 +132,11 @@
 				86776CEB19439D150062FAB3 /* TAKAppDelegate.m */,
 				86776CF019439D150062FAB3 /* TAKViewController.h */,
 				86776CF119439D150062FAB3 /* TAKViewController.m */,
+				86FDCB4A1A0DDBCC00C7FEB0 /* TAKSwiftViewController.swift */,
 				86776CED19439D150062FAB3 /* Main.storyboard */,
 				86776CF319439D150062FAB3 /* Images.xcassets */,
 				86776CE219439D150062FAB3 /* Supporting Files */,
+				86FDCB491A0DDBCB00C7FEB0 /* TAKKit-Bridging-Header.h */,
 			);
 			path = TAKKit;
 			sourceTree = "<group>";
@@ -344,6 +349,7 @@
 				86776CE819439D150062FAB3 /* main.m in Sources */,
 				86776CF219439D150062FAB3 /* TAKViewController.m in Sources */,
 				86776CEC19439D150062FAB3 /* TAKAppDelegate.m in Sources */,
+				86FDCB4B1A0DDBCC00C7FEB0 /* TAKSwiftViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,10 +477,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TAKKit/TAKKit-Prefix.pch";
 				INFOPLIST_FILE = "TAKKit/TAKKit-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TAKKit/TAKKit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -485,10 +495,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TAKKit/TAKKit-Prefix.pch";
 				INFOPLIST_FILE = "TAKKit/TAKKit-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TAKKit/TAKKit-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

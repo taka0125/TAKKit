@@ -7,3 +7,19 @@
 //
 
 import Foundation
+import UIKit
+
+class TAKSwiftViewController: UIViewController {
+  override func viewDidLoad() {
+    NSLog("platform => \(UIDevice.currentDevice().tak_platform())")
+    
+    TAKBlock.runInBackground({
+      NSLog("isMainThread = \(NSThread.isMainThread())")
+      
+      TAKAlert.showWithTitle("title", message: "message")
+      
+    }, afterDelay: 1.0)
+    
+    view.backgroundColor = UIColor.tak_RGBColor(0xCCCCCC)
+  }
+}
