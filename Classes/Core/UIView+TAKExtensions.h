@@ -15,6 +15,7 @@
 @interface UIView (TAKExtensions)
 
 + (UINib *)tak_defaultNib;
++ (UINib *)tak_nibWithBundle:(NSBundle *)bundle;
 + (instancetype)tak_viewFromDefaultNib;
 + (instancetype)tak_viewFromDefaultNibWithOwner:(id)owner;
 + (NSString *)tak_defaultIdentifier;
