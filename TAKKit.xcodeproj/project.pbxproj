@@ -23,6 +23,7 @@
 		86776CFD19439D150062FAB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86776CDF19439D150062FAB3 /* UIKit.framework */; };
 		86776D0519439D150062FAB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86776D0319439D150062FAB3 /* InfoPlist.strings */; };
 		86A4720E19DED49800C07497 /* TAKWordTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A4720D19DED49800C07497 /* TAKWordTest.m */; };
+		86C069871A164A1400466815 /* TAKMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C069861A164A1400466815 /* TAKMainViewController.m */; };
 		86CD431B1944473C002F9845 /* NSNotificationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 86CD431A1944473C002F9845 /* NSNotificationTest.m */; };
 		86FDCB4B1A0DDBCC00C7FEB0 /* TAKSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FDCB4A1A0DDBCC00C7FEB0 /* TAKSwiftViewController.swift */; };
 		9B0639CCEA35488D9DC315D2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0199CB9FDD534E769D89C154 /* libPods.a */; };
@@ -62,6 +63,8 @@
 		86776D0219439D150062FAB3 /* TAKKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TAKKitTests-Info.plist"; sourceTree = "<group>"; };
 		86776D0419439D150062FAB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		86A4720D19DED49800C07497 /* TAKWordTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAKWordTest.m; sourceTree = "<group>"; };
+		86C069851A164A1400466815 /* TAKMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAKMainViewController.h; sourceTree = "<group>"; };
+		86C069861A164A1400466815 /* TAKMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAKMainViewController.m; sourceTree = "<group>"; };
 		86CD431A1944473C002F9845 /* NSNotificationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSNotificationTest.m; sourceTree = "<group>"; };
 		86FDCB491A0DDBCB00C7FEB0 /* TAKKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TAKKit-Bridging-Header.h"; sourceTree = "<group>"; };
 		86FDCB4A1A0DDBCC00C7FEB0 /* TAKSwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAKSwiftViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +146,8 @@
 				86776CEB19439D150062FAB3 /* TAKAppDelegate.m */,
 				86776CF019439D150062FAB3 /* TAKViewController.h */,
 				86776CF119439D150062FAB3 /* TAKViewController.m */,
+				86C069851A164A1400466815 /* TAKMainViewController.h */,
+				86C069861A164A1400466815 /* TAKMainViewController.m */,
 				86FDCB4A1A0DDBCC00C7FEB0 /* TAKSwiftViewController.swift */,
 				86776CED19439D150062FAB3 /* Main.storyboard */,
 				86776CF319439D150062FAB3 /* Images.xcassets */,
@@ -357,6 +362,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86C069871A164A1400466815 /* TAKMainViewController.m in Sources */,
 				865536221A0DE1D800F25538 /* CustomView.swift in Sources */,
 				86776CE819439D150062FAB3 /* main.m in Sources */,
 				86776CF219439D150062FAB3 /* TAKViewController.m in Sources */,

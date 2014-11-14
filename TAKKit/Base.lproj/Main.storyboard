@@ -9,7 +9,7 @@
         <!--TAKKit-->
         <scene sceneID="aLd-AE-SMX">
             <objects>
-                <tableViewController id="8GV-4C-dyU" sceneMemberID="viewController">
+                <tableViewController id="8GV-4C-dyU" customClass="TAKMainViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="8DG-7T-kPB">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,6 +62,26 @@
                                         <connections>
                                             <segue destination="vcb-ga-Aaa" kind="show" id="Ghy-5x-SJb"/>
                                         </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="po8-7W-BYQ">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="po8-7W-BYQ" id="eKu-6G-WQj">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NSUserDefaults" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oye-Ee-4Nx">
+                                                    <rect key="frame" x="15" y="8" width="577" height="27.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Oye-Ee-4Nx" firstAttribute="leading" secondItem="eKu-6G-WQj" secondAttribute="leadingMargin" constant="7" id="9bS-TG-cf4"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Oye-Ee-4Nx" secondAttribute="bottom" id="Z58-dk-9V3"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Oye-Ee-4Nx" secondAttribute="trailing" id="fy0-H9-xWc"/>
+                                                <constraint firstItem="Oye-Ee-4Nx" firstAttribute="top" secondItem="eKu-6G-WQj" secondAttribute="topMargin" id="ln4-M9-MGa"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>

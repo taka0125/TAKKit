@@ -12,7 +12,11 @@
 @implementation UIView (TAKExtensions)
 
 + (UINib *)tak_defaultNib {
-  return [UINib nibWithNibName:[[self class] tak_defaultNibName] bundle:nil];
+  return [[self class] tak_nibWithBundle:nil];
+}
+
++ (UINib *)tak_nibWithBundle:(NSBundle *)bundle {
+  return [UINib nibWithNibName:[[self class] tak_defaultNibName] bundle:bundle];
 }
 
 + (instancetype)tak_viewFromDefaultNib {

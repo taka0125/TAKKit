@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "TAKKit"
-  s.version      = "1.2.1"
+  s.version      = "1.3.0"
   s.summary      = "Util"
   s.homepage     = "https://github.com/taka0125/TAKKit"
   s.license      = 'MIT'
@@ -15,5 +15,13 @@ Pod::Spec.new do |s|
 
   s.subspec 'Core' do |sp|
     sp.source_files = 'Classes/Core.h', 'Classes/Core'
+  end
+
+  s.subspec 'UserDefaults' do |sp|
+    sp.dependency 'TAKKit/Core'
+    sp.source_files = 'Classes/UserDefaults.h', 'Classes/UserDefaults'
+    sp.resource_bundles = {
+      'TAKUserDefaults' => ['Resources/TAKUserDefaults/*']
+    }
   end
 end
