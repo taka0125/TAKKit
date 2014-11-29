@@ -7,7 +7,7 @@ install:
   - bundle install --path=vendor/bundle --binstubs=vendor/bin
   - bundle exec pod install
 before_script:
-  - brew update && brew upgrade xctool && xctool --version
+  - brew update && (brew upgrade xctool || true) && xctool --version
 xcode_workspace:  TAKKit.xcworkspace
 xcode_scheme: TAKKit
 xcode_sdk: iphonesimulator
