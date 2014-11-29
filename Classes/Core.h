@@ -22,5 +22,6 @@
 #import "TAKKit/Core/NSNotification+TAKExtensions.h"
 #import "TAKKit/Core/TAKBlock.h"
 #import "TAKKit/Core/UIColor+TAKExtensions.h"
+#import "TAKKit/Core/NSTimer+TAKExtensions.h"
 
 #endif

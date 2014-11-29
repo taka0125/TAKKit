@@ -21,6 +21,10 @@
 + (NSString *)tak_defaultIdentifier;
 + (NSString *)tak_defaultNibName;
 
+- (void)tak_modifyFrame:(CGRect(^)(CGRect))block;
+- (void)tak_modifyOrigin:(CGPoint(^)(CGPoint))block;
+- (void)tak_modifySize:(CGSize(^)(CGSize))block;
+
 @end
 
 #endif
