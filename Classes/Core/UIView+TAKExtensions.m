@@ -38,4 +38,21 @@
   return [[self class] tak_defaultIdentifier];
 }
 
+- (void)tak_modifyFrame:(CGRect(^)(CGRect))block {
+  CGRect f = self.frame;
+  self.frame = block(f);
+}
+
+- (void)tak_modifyOrigin:(CGPoint(^)(CGPoint))block {
+  CGRect f = self.frame;
+  f.origin = block(f.origin);
+  self.frame = f;
+}
+
+- (void)tak_modifySize:(CGSize(^)(CGSize))block {
+  CGRect f = self.frame;
+  f.size = block(f.size);
+  self.frame = f;
+}
+
 @end
