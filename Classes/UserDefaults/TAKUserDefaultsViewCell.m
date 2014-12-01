@@ -21,6 +21,8 @@ static const CGFloat Padding = 23.0;
 @implementation TAKUserDefaultsViewCell
 
 - (void)bindWithKey:(NSString *)key value:(id)value {
+  self.selectionStyle = UITableViewCellSelectionStyleNone;
+  
   self.keyNameLabel.text = key;
   self.classNameLabel.text = NSStringFromClass([value class]);
   self.valueLabel.text = [value description];
