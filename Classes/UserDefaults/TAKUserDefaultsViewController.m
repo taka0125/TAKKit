@@ -31,27 +31,27 @@
 }
 
 - (void)viewDidLoad {
-  self.tableView.delegate = self;
-  self.tableView.dataSource = self;
-  self.tableView.estimatedRowHeight = 108.0f;
+  _tableView.delegate = self;
+  _tableView.dataSource = self;
+  _tableView.estimatedRowHeight = 108.0f;
   
   if (self.navigationController) {
-    self.topPaddingConstraint.constant = 0.0f;
+    _topPaddingConstraint.constant = 0.0f;
   }
   
-  [self.tableView registerClass:[TAKUserDefaultsViewCell class] forCellReuseIdentifier:[TAKUserDefaultsViewCell tak_defaultIdentifier]];
-  [self.tableView registerNib:[TAKUserDefaultsViewCell tak_nibWithBundle:[TAKUserDefaultsBundleHelper bundle]] forCellReuseIdentifier:[TAKUserDefaultsViewCell tak_defaultIdentifier]];
+  [_tableView registerClass:[TAKUserDefaultsViewCell class] forCellReuseIdentifier:[TAKUserDefaultsViewCell tak_defaultIdentifier]];
+  [_tableView registerNib:[TAKUserDefaultsViewCell tak_nibWithBundle:[TAKUserDefaultsBundleHelper bundle]] forCellReuseIdentifier:[TAKUserDefaultsViewCell tak_defaultIdentifier]];
   
   [self.searchDisplayController.searchResultsTableView registerClass:[TAKUserDefaultsViewCell class] forCellReuseIdentifier:[TAKUserDefaultsViewCell tak_defaultIdentifier]];
   [self.searchDisplayController.searchResultsTableView registerNib:[TAKUserDefaultsViewCell tak_nibWithBundle:[TAKUserDefaultsBundleHelper bundle]] forCellReuseIdentifier:[TAKUserDefaultsViewCell tak_defaultIdentifier]];
   
-  self.cellForHeightCalculate = [self.tableView dequeueReusableCellWithIdentifier:[TAKUserDefaultsViewCell tak_defaultIdentifier]];
+  self.cellForHeightCalculate = [_tableView dequeueReusableCellWithIdentifier:[TAKUserDefaultsViewCell tak_defaultIdentifier]];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
   self.items = [[NSUserDefaults standardUserDefaults] dictionaryRepresentation];
-  self.keys = [self.items.allKeys sortedArrayUsingSelector:@selector(compare:)];
-  self.filteredKeys = self.keys;
+  self.keys = [_items.allKeys sortedArrayUsingSelector:@selector(compare:)];
+  self.filteredKeys = _keys;
 }
 
 #pragma mark - UITableViewDataSource
@@ -61,22 +61,22 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-  return [self decideKeys:tableView].count;
+  return [self p_decideKeys:tableView].count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-  NSString *key = [self decideKeys:tableView][indexPath.row];
-  id obj = self.items[key];
-  [self.cellForHeightCalculate bindWithKey:key value:obj];
-  return [self.cellForHeightCalculate calculateHeight];
+  NSString *key = [self p_decideKeys:tableView][indexPath.row];
+  id obj = _items[key];
+  [_cellForHeightCalculate bindWithKey:key value:obj];
+  return [_cellForHeightCalculate calculateHeight];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   TAKUserDefaultsViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[TAKUserDefaultsViewCell tak_defaultIdentifier] forIndexPath:indexPath];
   cell.backgroundColor = tableView.backgroundColor;
   
-  NSString *key = [self decideKeys:tableView][indexPath.row];
-  id obj = self.items[key];
+  NSString *key = [self p_decideKeys:tableView][indexPath.row];
+  id obj = _items[key];
   [cell bindWithKey:key value:obj];
   
   return cell;
@@ -92,7 +92,7 @@
 
 - (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString {
   NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF contains[c] %@", searchString];
-  self.filteredKeys = [self.keys filteredArrayUsingPredicate:predicate];
+  self.filteredKeys = [_keys filteredArrayUsingPredicate:predicate];
   return YES;
 }
 
@@ -101,20 +101,20 @@
 }
 
 - (void)searchDisplayController:(UISearchDisplayController *)controller willShowSearchResultsTableView:(UITableView *)tableView {
-  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide) name:UIKeyboardWillHideNotification object:nil];
+  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(p_keyboardWillHide) name:UIKeyboardWillHideNotification object:nil];
 }
 
 #pragma mark - Private Methods
 
-- (void)keyboardWillHide {
+- (void)p_keyboardWillHide {
   UITableView *tableView = self.searchDisplayController.searchResultsTableView;
   tableView.contentInset = UIEdgeInsetsZero;
   tableView.scrollIndicatorInsets = UIEdgeInsetsZero;
 }
 
-- (NSArray *)decideKeys:(UITableView *)tableView {
-  if (tableView == self.searchDisplayController.searchResultsTableView) return self.filteredKeys;
-  return self.keys;
+- (NSArray *)p_decideKeys:(UITableView *)tableView {
+  if (tableView == self.searchDisplayController.searchResultsTableView) return _filteredKeys;
+  return _keys;
 }
 
 @end
