@@ -10,8 +10,8 @@
 #ifndef TAKKit_UserDefaults_h
 #define TAKKit_UserDefaults_h
 
-#import "TAKKit/UserDefaults/TAKUserDefaultsViewController.h"
-#import "TAKKit/UserDefaults/TAKUserDefaultsBundleHelper.h"
-#import "TAKKit/UserDefaults/TAKUserDefaultsViewCell.h"
+#import "TAKUserDefaultsViewController.h"
+#import "TAKUserDefaultsBundleHelper.h"
+#import "TAKUserDefaultsViewCell.h"
 
 #endif

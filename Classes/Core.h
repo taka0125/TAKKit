@@ -10,18 +10,18 @@
 #ifndef TAKKit_Core_h
 #define TAKKit_Core_h
 
-#import "TAKKit/Core/defines.h"
-#import "TAKKit/Core/TAKAlert.h"
-#import "TAKKit/Core/TAKWord.h"
-#import "TAKKit/Core/UICollectionView+TAKExtensions.h"
-#import "TAKKit/Core/UIDevice+TAKHardware.h"
-#import "TAKKit/Core/UITableView+TAKExtensions.h"
-#import "TAKKit/Core/UIView+TAKExtensions.h"
-#import "TAKKit/Core/UIViewController+TAKExtensions.h"
-#import "TAKKit/Core/UIStoryboard+TAKExtensions.h"
-#import "TAKKit/Core/NSNotification+TAKExtensions.h"
-#import "TAKKit/Core/TAKBlock.h"
-#import "TAKKit/Core/UIColor+TAKExtensions.h"
-#import "TAKKit/Core/NSTimer+TAKExtensions.h"
+#import "defines.h"
+#import "TAKAlert.h"
+#import "TAKWord.h"
+#import "UICollectionView+TAKExtensions.h"
+#import "UIDevice+TAKHardware.h"
+#import "UITableView+TAKExtensions.h"
+#import "UIView+TAKExtensions.h"
+#import "UIViewController+TAKExtensions.h"
+#import "UIStoryboard+TAKExtensions.h"
+#import "NSNotification+TAKExtensions.h"
+#import "TAKBlock.h"
+#import "UIColor+TAKExtensions.h"
+#import "NSTimer+TAKExtensions.h"
 
 #endif

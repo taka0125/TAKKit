@@ -10,7 +10,7 @@
 #ifndef TAKKit_TAKKit_h
 #define TAKKit_TAKKit_h
 
-#import "TAKKit/Core.h"
-#import "TAKKit/UserDefaults.h"
+#import "Core.h"
+#import "UserDefaults.h"
 
 #endif
